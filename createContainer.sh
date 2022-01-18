@@ -3,8 +3,7 @@
 containerName=mongodb
 imageName=mongo
 
-force=1
-if [ -n "$force" ] # pullLatestDocker.sh -i $imageName
+if pullLatestDocker.sh -i $imageName
 then
     echo "re-building container $containerName"
 
