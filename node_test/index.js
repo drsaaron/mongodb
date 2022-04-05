@@ -3,6 +3,8 @@ const { MongoClient } = require("mongodb");
 const uri = "mongodb://localhost";
 const client = new MongoClient(uri);
 
+console.log(`your home is ${process.env.HOME}`)
+
 async function run() {
   try {
       await client.connect();
